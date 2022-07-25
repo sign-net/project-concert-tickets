@@ -23,10 +23,6 @@ function App() {
     return Object.keys(object).filter((key) => object[key] === value);
   }
 
-  function refresh() {
-    setIsLoading(true);
-  }
-
   function constructBatchMintParameters(number) {
     const arr = [];
     for (let i = 0; i < number; i++)
@@ -120,7 +116,6 @@ function App() {
           <div>
             <img src="banner.png" alt="Banner" width="800" />
             <br />
-            <button onClick={refresh}>Refresh</button>
             <div className="grid">
               <div>
                 <h3>
